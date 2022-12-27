@@ -1,0 +1,8 @@
+quan hệ giữa các database
+
+B1: Tạo quan hệ 
+    ref: 'user'
+
+B2: Truy vấn
+    .populate({path: 'userId'})
+

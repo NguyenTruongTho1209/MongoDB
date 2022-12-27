@@ -1,0 +1,40 @@
+B1 : tải mongoose 
+    npm i mongoose
+
+import mongoose 
+    require('mongoose')
+
+B2: liên kết với mongoDB
+    mongoose.connect('url')
+    url = domain/database
+
+B3: Tạo mẫu bảng (Schema)
+    mongoose.Schema({mẫu bảng},{option})
+
+B4: Tạo model để có công cụ làm việc với bảng vừa tạo 
+    mongoose.model('tên bảng' , Schema)
+
+================================================================
+
+model.create(data)          thêm data vào bảng
+                            nếu chưa có bảng thì sẽ tự động tạo bảng
+
+model.find({điều kiện})     trả về data thỏa mãn điều kiện tìm kiếm
+                            trả về array
+
+model.findOne({điều kiện})  trả về data đầu tiên thỏa mãn điều kiện tìm kiếm
+
+moedel.updateOne({newValue})
+                            chỉnh sửa data đầu tiên thỏa mãn điều kiện tìm kiếm
+                            trả về object báo cáo kết quả
+
+model.updateMany({newValue})
+                            chỉnh sửa tất cả data thỏa mãn điều kiện tìm kiếm
+                            trả về object báo cáo kết quả
+                            (lưu ý: nếu không cần thiết thì lên sử dụng updateOne vì dùng updateMany dễ pay màu data)    
+
+model.deleteOne({điều kiện})
+                            xóa data đầu tiên thỏa mãn điều kiện
+                            trả về object báo cáo kết quả
+
+Lưu ý : Khi làm việc với id thì dùng _id

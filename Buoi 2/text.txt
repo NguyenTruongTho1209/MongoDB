@@ -1,0 +1,36 @@
+query so sánh
+
+$eq             =       tìm kiếm bằng
+
+$ne             !=      tìm kiếm khác
+
+$gt             >       tìm kiếm lớn hơn
+
+$gte            <       tìm kiếm nhỏ hơn
+
+$in                     tìm kiếm khớp với giá trị bất kì có trong array
+
+$nin          not in    tìm kiếm khác với giá trị bất kì có trong array
+
+
+=======================================================================
+$and                    tìm kiếm điều kiện đồng thời 
+                        mặc định mongoose dùng $and
+
+$or                     tìm kiếm theo điều kiện hoặc
+                        {$or : [{TH1} , {TH2}]}
+
+$nor                    not or
+                        ngược lại với or
+                        tìm kiếm các data không khớp với các điều kiện trong array
+                        {$nor : [{TH1} , {TH2}]}
+
+==========================================================================
+
+.sort({key: value})     key:    trường sắp xếp
+                        value:  1 sắp xếp chiều tăng dần
+                        value: -1 sắp xếp chiều giảm dần
+
+.limit(number)          chỉ trả về tối đa là number data 
+
+.skip(number)           bỏ qua number data , trả về data từ vị trí number + 1

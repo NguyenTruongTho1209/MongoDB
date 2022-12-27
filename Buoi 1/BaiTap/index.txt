@@ -1,0 +1,28 @@
+Bài 1: hãy tạo một model có tên là post có cột như sau: content, title, comment
+Tạo 2 bản ghi mới
+Tìm toàn bộ bài post
+In ra 1 bài post theo điều kiện id
+Cập nhật 1 giá trị của content theo 1 id 
+
+Bài 2: Hãy tạo một model có tên là user có các cột như sau: username, password, email, age, school
+tạo 5 bản ghi với nội dung bất kì
+Tìm ra 1 bản ghi theo username, password ( nếu không tim thấy thì in ra thông báo là không tìm thấy, còn tìm thấy thì in ra thông báo )
+Xóa 1 bản ghi theo  id
+Thực hiện tìm và in ra giới hạn chỉ in ra 3 bản ghi 
+
+Bài 3: Tạo bảng data có tên staff lưu trữ thông tin nhân viên gồm
+ho
+ten
+tuoi
+chucVu (staff, leader, manager)
+
+a, Hãy thêm 10 data vào bảng bằng mongoose
+b, Hãy tìm kiếm nhân viên có tên “Hai”
+c, Hãy lấy tất cả nhân viên và sắp xếp theo chiều tuổi tăng dần
+d, Hãy cập nhận chức vụ cho nhân viên “Tung” thành leader
+e, Hãy update nhân viên “Tung”, tăng lên 1 tuổi
+	g, Hãy tìm tất cả nhân viên họ “Nguyen” có chucVu là “leader”
+
+
+Bài 4: (Nâng cao) 
+Ghép bảng user của bài 2 vào server và tạo ra các api tương ứng với yêu cầu của bài 2, Lấy giá trị của người dùng nhập lên để tạo các yêu cầu chứ không fix cứng giá trị như bài 2 nữa
